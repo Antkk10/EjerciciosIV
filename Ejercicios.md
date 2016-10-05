@@ -30,14 +30,14 @@
     egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 me aparece lo siguiente:
 ![](capturas/proc.png)
-
 Para saber el modelo del procesador utilizamos el siguiente comando:
     cat /proc/cpuinfo
 ![](capturas/cpu.png)
-
 Como podemos observar mi procesador es **intel i5 5200U 2.20GHz**
 
 6. Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden **kvm-ok**.
 **Respuesta**: Podemos observar que el kernel de mi pc si contiene este módulo.
 ![](/capturas/kvm.png)
 7. Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
+**Respuesta**: Para el hipervisor de máquinas virtuales he instalado [VirtualBox](https://www.virtualbox.org/) que si queremos instalarlo desde el terminal debemos de introducir el siguiente comando:
+    sudo apt-get install virtualbox
