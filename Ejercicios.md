@@ -17,6 +17,11 @@
     * 2022: 744 * 0,05 = 37,2 euros.
     * 2023: 744 * 0,05 = 37,2 euros.
 2. Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) en el caso de que la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+**Respuesta**: Para el servidor he elegido [Hostalia servidor dedicado Star](https://www.hostalia.com/dedicados/?utm_medium=cpc&utm_source=google&utm_content=busqueda&utm_campaign=google_servidoresdedicados_hosting_exacto&gclid=CjwKEAjws7OwBRCn2Ome5tPP8gESJAAfopWsTkhaReicx0JHaLjrgbbldKDaRJBKBp8tmU_b-rJ6GxoCOWTw_wcB), y para el servicio en la nube [azure nivel de precios Basic A3](https://azure.microsoft.com/es-es/pricing/calculator/?service=virtual-machines). El servidor de hostalia tiene los siguientes componentes:
+![](capturas/hostalia.png) y la nube:
+![](capturas/azure)
+El servidor de hostalia nos sale durante los seis primeros meses a 69,90 euros el mes, posteriormente sale por 99,90 euros el mes. Un año de uso del servidor de hostalia nos sale por **1018,8 euros**.
+En cuando al servicio en la nube, nos sale a pagar 0,260 euros la hora, si realmente lo usamos 1% del total de horas que tiene un año debemos pagar la siguiente cantidad (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,01 = 22,464 euros/año. Si realmente usamos un 10% del total de horas que tiene un año (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,1 = 224,4 euros al año.
 3. [¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.](https://github.com/JJ/IV16-17/issues/1 )
 **Respuesta**:
   * **Virtualización plena**: la utilizo para para poder usar tanto windows como ubuntu al mismo tiempo. Por ejemplo necesito trabajar con windows y al mismo tiempo estoy trabajando en ubuntu, no quiero reiniciar el ordenador y acceder a windows instalado en mi ordenador de forma nativa a través del grub. Pues instalo una máquina virtual (VirtualBox) y en ella instalo Windows, así puedo trabajar con los dos SO a la vez.
@@ -26,7 +31,7 @@
   * **Virtualización de entornos de desarrollo**: Cuando creamos una aplicación o podemos comprobar un script, necisitamos comprobar si nuestro programa va a funcionar en varias distribuciones. Utilizamos esta virtualización para poder comprobar nuestro programa en varias distribuciones.
 4. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 **Respuesta**: He escrito un simple Hola mundo usando Python. He instalado **CDE** para empaquetar y posteriormente poder ejecutar el programa.
-![](capturas/ejeciciopy.png)
+![](capturas/ejerciciopy.png)
 ![](capturas/cde.png)
 5. Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 **Respuesta**: Al insertar el siguiente comando:
