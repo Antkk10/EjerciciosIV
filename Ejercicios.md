@@ -27,16 +27,13 @@
 4. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 5. Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 **Respuesta**: Al insertar el siguiente comando:
-
-    egrep '^flags.*(vmx|svm)' /proc/cpuinfo
-
+    **egrep '^flags.*(vmx|svm)' /proc/cpuinfo**
 me aparece lo siguiente:
 ![](capturas/proc.png)
 Para saber el modelo del procesador utilizamos el siguiente comando:
     cat /proc/cpuinfo
 ![](capturas/cpu.png)
 Como podemos observar mi procesador es **intel i5 5200U 2.20GHz**
-
 6. Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden **kvm-ok**.
 **Respuesta**: Podemos observar que el kernel de mi pc si contiene este módulo.
 ![](/capturas/kvm.png)
