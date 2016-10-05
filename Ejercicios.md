@@ -26,8 +26,10 @@
   * **Virtualización de entornos de desarrollo**: Cuando creamos una aplicación o podemos comprobar un script, necisitamos comprobar si nuestro programa va a funcionar en varias distribuciones. Utilizamos esta virtualización para poder comprobar nuestro programa en varias distribuciones.
 4. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 5. Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
-**Respuesta**: Al insertar el siguiente comando
+**Respuesta**: Al insertar el siguiente comando:
+
     egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
 me aparece lo siguiente:
 ![](capturas/proc.png)
 Para saber el modelo del procesador utilizamos el siguiente comando:
@@ -40,4 +42,5 @@ Como podemos observar mi procesador es **intel i5 5200U 2.20GHz**
 ![](/capturas/kvm.png)
 7. Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
 **Respuesta**: Para el hipervisor de máquinas virtuales he instalado [VirtualBox](https://www.virtualbox.org/) que si queremos instalarlo desde el terminal debemos de introducir el siguiente comando:
+
     sudo apt-get install virtualbox
