@@ -25,6 +25,9 @@
   * **Virtualización de aplicaciones**: Crea un entorno abstracto, haciendolo independiente del entorno físico. Por ejemplo cuando quiero usar una aplicación en Windows creada en Ubuntu.
   * **Virtualización de entornos de desarrollo**: Cuando creamos una aplicación o podemos comprobar un script, necisitamos comprobar si nuestro programa va a funcionar en varias distribuciones. Utilizamos esta virtualización para poder comprobar nuestro programa en varias distribuciones.
 4. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+**Respuesta**: He escrito un simple Hola mundo usando Python. He instalado **CDE** para empaquetar y posteriormente poder ejecutar el programa.
+![](capturas/ejeciciopy.png)
+![](capturas/cde.png)
 5. Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 **Respuesta**: Al insertar el siguiente comando:
     **egrep '^flags.*(vmx|svm)' /proc/cpuinfo**
