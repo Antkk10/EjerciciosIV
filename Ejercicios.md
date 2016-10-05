@@ -21,7 +21,7 @@
 ![](capturas/hostalia.png) y la nube:
 ![](capturas/azure)
 El servidor de hostalia nos sale durante los seis primeros meses a 69,90 euros el mes, posteriormente sale por 99,90 euros el mes. Un año de uso del servidor de hostalia nos sale por **1018,8 euros**.
-En cuando al servicio en la nube, nos sale a pagar 0,260 euros la hora, si realmente lo usamos 1% del total de horas que tiene un año debemos pagar la siguiente cantidad (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,01 = 22,464 euros/año. Si realmente usamos un 10% del total de horas que tiene un año (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,1 = 224,4 euros al año.
+En cuando al servicio en la nube, nos sale a pagar 0,260 euros la hora, si realmente lo usamos 1% del total de horas que tiene un año debemos pagar la siguiente cantidad (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,01 = **22,464 euros/año**. Si realmente usamos un 10% del total de horas que tiene un año (0,26 * 24 horas * 30 días/mes * 12 meses) * 0,1 = **224,4 euros** al año.
 3. [¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.](https://github.com/JJ/IV16-17/issues/1 )
 **Respuesta**:
   * **Virtualización plena**: la utilizo para para poder usar tanto windows como ubuntu al mismo tiempo. Por ejemplo necesito trabajar con windows y al mismo tiempo estoy trabajando en ubuntu, no quiero reiniciar el ordenador y acceder a windows instalado en mi ordenador de forma nativa a través del grub. Pues instalo una máquina virtual (VirtualBox) y en ella instalo Windows, así puedo trabajar con los dos SO a la vez.
