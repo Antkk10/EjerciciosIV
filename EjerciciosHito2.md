@@ -5,10 +5,10 @@ El entorno virtual que he instalado ha sido **virtualenv** de Python. Como guía
 
 Insertamos el siguiente comando:
 
-  pip install virtualenv
+    pip install virtualenv
 
 Y posteriormente para ver que lo tenemos instalado:
 
-  virtualenv --version
+    virtualenv --version
 
 ![](capturas/virtualenv.png)
