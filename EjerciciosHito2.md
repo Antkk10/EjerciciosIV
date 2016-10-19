@@ -4,9 +4,11 @@
 El entorno virtual que he instalado ha sido **virtualenv** de Python. Como guía de instalación he usado este [enlace](http://rukbottoland.com/blog/tutorial-de-python-virtualenv/) (como se puede apreciar es muy sencillo instalar el entorno).
 
 Insertamos el siguiente comando:
+
   pip install virtualenv
 
 Y posteriormente para ver que lo tenemos instalado:
+
   virtualenv --version
 
 ![](capturas/virtualenv.png)
