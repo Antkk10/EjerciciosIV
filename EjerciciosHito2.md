@@ -76,3 +76,21 @@ Django proporciona un método propio para realizar los test.
 
 Obtenemos la misma salida que en el ejercicios 6.
 ![](capturas/pasatest.png)
+
+### Ejercicio 8. ###
+
+#### Darse de alta. Muchos están conectados con GitHub por lo que puedes autentificarte directamente desde ahí. A través de un proceso de autorización, puedes acceder al contenido e incluso informar del resultado de los tests a GitHub. ####
+
+![](capturas/altatravis.png)
+
+#### Activar el repositorio en el que se vaya a aplicar la integración continua. Travis permite hacerlo directamente desde tu configuración; en otros se dan de alta desde la web de GitHub. ####
+
+![](capturas/repositorio.png)
+
+#### Crear un fichero de configuración para que se ejecute la integración y añadirlo al repositorio. ####
+
+[archivo travis](https://github.com/Antkk10/IVWebCalificarEmpresas/blob/master/.travis.yml)
+
+[![Build Status](https://travis-ci.org/Antkk10/IVWebCalificarEmpresas.svg?branch=master)](https://travis-ci.org/Antkk10/IVWebCalificarEmpresas)
+
+PD: Puede ser que no funcione ya que hice una instalación con sudo (mal hecho por mi parte) y no me pasa el test, de hecho en la página de travis menciona que debo usar sudo.
