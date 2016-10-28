@@ -24,4 +24,4 @@ Aquí podemos observar que podemos introducir una valoración sobre la empresa "
 
 Para la versión 2.7 y 3.5 funciona perfectamente.
 
-![](capturas/python2y3.png)
+![](capturas/comprobacionpython.png)
