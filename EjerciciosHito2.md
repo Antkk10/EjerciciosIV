@@ -67,3 +67,12 @@ He creado la página web con el framework Django. Al utilizar Django, crea autom
 Este es mi test [archivo test.py](https://github.com/Antkk10/IVWebCalificarEmpresas/blob/master/empresa/tests.py). En la siguiente imagen podemos observar que pasa el test
 
 ![](capturas/pasatest.png)
+
+### 7. Convertir los tests unitarios anteriores con assert a programas de test y ejecutarlos desde mocha, usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vas a necesitar un poco más adelante. ###
+
+Django proporciona un método propio para realizar los test.
+
+    python manage.py test empresa
+
+Obtenemos la misma salida que en el ejercicios 6.
+![](capturas/pasatest.png)
