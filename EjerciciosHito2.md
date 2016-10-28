@@ -92,5 +92,3 @@ Obtenemos la misma salida que en el ejercicios 6.
 [archivo travis](https://github.com/Antkk10/IVWebCalificarEmpresas/blob/master/.travis.yml)
 
 [![Build Status](https://travis-ci.org/Antkk10/IVWebCalificarEmpresas.svg?branch=master)](https://travis-ci.org/Antkk10/IVWebCalificarEmpresas)
-
-PD: Puede ser que no funcione ya que hice una instalación con sudo (mal hecho por mi parte) y no me pasa el test, de hecho en la página de travis menciona que debo usar sudo.
