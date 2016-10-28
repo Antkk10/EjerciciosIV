@@ -60,4 +60,10 @@ Indicando html le estamos diciendo que nos genere la documentación para visuali
 
 Para acceder a la documentación es en la carpeta **docs/build/html**
 
-![](capturas/pagina.png)
+![](capturas/documentacion.png)
+
+### 6. Para la aplicación que se está haciendo, escribir una serie de aserciones y probar que efectivamente no fallan. Añadir tests para una nueva funcionalidad, probar que falla y escribir el código para que no lo haga (vamos, lo que viene siendo TDD). ###
+He creado la página web con el framework Django. Al utilizar Django, crea automáticamente el archivo **tests.py**. Voy a modificarlo para realizar una serie de test sobre el código generado.
+Este es mi test [archivo test.py](https://github.com/Antkk10/IVWebCalificarEmpresas/blob/master/empresa/tests.py). En la siguiente imagen podemos observar que pasa el test
+
+![](capturas/pasatest.png)
