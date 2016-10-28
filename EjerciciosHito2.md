@@ -28,6 +28,36 @@ Para la versión 2.7 y 3.5 funciona perfectamente.
 
 ### 4. Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente. ###
 El lenguaje que estoy usando es python, entonces para obtener todas las dependencias que utiliza mi programa vamos a usar el comando pip freeze y todo el contenido lo va a volcar a un archivo de texto llamado requirements.txt.
+
     pip freeze > requirements.txt
 
 ![](capturas/requirements.png)
+
+### 5. Automatizar con grunt, gulp u otra herramienta de gestión de tareas en Node la generación de documentación de la librería que se cree usando docco u otro sistema similar de generación de documentatión. . Previamente, por supuesto, habrá que documentar tal librería. ###
+
+Uso de Sphinx para generar la documentación html del proyecto. Primero debemos de instalar Sphinx:
+
+    pip install sphinx
+
+![](capturas/Sphinxinstall.png)
+He tenido que instalarlo con sudo ya que al instalarlo en algunas carpetas mostrava excepciones.
+
+
+Posteriormente introducimos en consola
+
+    sphinx-quickstart
+
+Y podemos comprobar que se obtiene la documentación correctamente:
+![](capturas/sphinx1.png)
+![](capturas/sphinx2.png)
+
+Para obtener la documentación insertamos el siguiente comando:
+
+    make html
+
+Indicando html le estamos diciendo que nos genere la documentación para visualizarla en página web.
+![](capturas/make.png)
+
+Para acceder a la documentación es en la carpeta **docs/build/html**
+
+![](capturas/pagina.png)
