@@ -19,3 +19,9 @@ Y posteriormente para ver que lo tenemos instalado:
 
 Aquí podemos observar que podemos introducir una valoración sobre la empresa "Nuevas tecnologías".
 ![](capturas/pagina.png)
+
+### 3. Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas? ###
+
+Para la versión 2.7 y 3.5 funciona perfectamente.
+
+![](capturas/python2y3.png)
