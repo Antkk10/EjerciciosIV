@@ -17,7 +17,7 @@ Y posteriormente para ver que lo tenemos instalado:
 
 [Repositorio del ejercicio](https://github.com/Antkk10/IVWebCalificarEmpresas)
 
-Aquí podemos observar que podemos introducir una valoración sobre la empresa "Nuevas tecnologías".
+Aquí podemos observar que podemos introducir una valoración sobre la empresa "Nuevas seguridad".
 ![](capturas/pagina.png)
 
 ### 3. Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas? ###
@@ -25,3 +25,9 @@ Aquí podemos observar que podemos introducir una valoración sobre la empresa "
 Para la versión 2.7 y 3.5 funciona perfectamente.
 
 ![](capturas/comprobacionpython.png)
+
+### 4. Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente. ###
+El lenguaje que estoy usando es python, entonces para obtener todas las dependencias que utiliza mi programa vamos a usar el comando pip freeze y todo el contenido lo va a volcar a un archivo de texto llamado requirements.txt.
+    pip freeze > requirements.txt
+
+![](capturas/requirements.png)
