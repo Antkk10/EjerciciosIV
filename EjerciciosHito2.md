@@ -40,7 +40,7 @@ Uso de Sphinx para generar la documentación html del proyecto. Primero debemos 
     pip install sphinx
 
 ![](capturas/Sphinxinstall.png)
-He tenido que instalarlo con sudo ya que al instalarlo en algunas carpetas mostrava excepciones.
+He tenido que instalarlo con sudo ya que al instalarlo en algunas carpetas mostraba excepciones.
 
 
 Posteriormente introducimos en consola
