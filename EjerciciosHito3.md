@@ -1,6 +1,6 @@
 # Ejercicios hito 3 #
 
-### 1. Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu, BlueMix u OpenShift ###
+### Ejercicio 1 ###
 Me he dado de alta en Heroku con la cuenta de la universidad.
 ![](capturas/registroheroku.png)
 
@@ -8,6 +8,7 @@ Me he dado de alta en Heroku con la cuenta de la universidad.
 El PaaS que he usado ha sido [Heroku](https://dashboard.heroku.com/apps)
 
 El primer paso ha sido crear una cuenta en la página web. Para instalar heroku en el terminal debemos de tener instalado **Ruby**. El comando para instalar **heroku** es:
+
     wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 Podemos comprobar la versión de **heroku** con el siguiente comando:
@@ -67,11 +68,11 @@ Instalamos en el entorno virtual los requisitos del sistema con el siguiente com
 
 En un primer momento al insertar el comando nos salta un error solicitando otra instalación (postgresql-server-dev-X.Y):
 
-![](requirements1.png)
+![](capturas/requirements1.png)
 
 Lo instalamos y posteriormente volvemos a insertar el comando de requistos. Podemos comprobar que todo se instala correctamente:
 
-![](requirements2.png)
+![](capturas/requirements2.png)
 
 Despúes de comprobar que se ha instalado correctamente y ver que funciona de forma local, he añadidod al fichero requirements la linea **requests==2.9.1** y **imrt requests** al fichero **hello/views.py**. Esto lo hacemos para que se pueda leer las peticiones web en la cabecera.
 Para almacenar todos los cambios metemos los tres siguientes comandos:
@@ -157,3 +158,14 @@ En caso de que se introduzca una url erronea, manda un mensaje 404. El código e
                                              #         desde cualquier sitio.
                                              #         Ojo, peligroso en solo
                                              #         en modo debug
+
+### Ejercicio 4 ###
+
+### Ejercicio 6 ###
+Primero he tenido que instalar foreman con el siguiente comando:
+
+    sudo apt install ruby-foreman
+
+Una vez tenemos esto instalado lo usamos con la aplicación para mostrar el contenido de forma local:
+
+![](capturas/foreman.png)
