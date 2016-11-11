@@ -169,3 +169,8 @@ Primero he tenido que instalar foreman con el siguiente comando:
 Una vez tenemos esto instalado lo usamos con la aplicación para mostrar el contenido de forma local:
 
 ![](capturas/foreman.png)
+
+### Ejercicio 7 ###
+Para el despliegue automático tenemos que indicarlo en la pestaña despliegue de nuestra aplicación.
+
+![](capturas/despliegueautomatico.png)
