@@ -160,6 +160,42 @@ En caso de que se introduzca una url erronea, manda un mensaje 404. El código e
                                              #         en modo debug
 
 ### Ejercicio 4 ###
+Para realizar este ejercicio he usado la herramienta que proporciona flask. El código lo he almacenado en un archivo llamado test.py y tiene el siguiente contenido:
+
+    # -*- coding: utf-8 -*-
+
+    import os
+    import ejercicio3
+    import unittest
+    import tempfile
+
+    class FlaskrTestCase(unittest.TestCase):
+
+        def setUp(self):
+            self.db_fd, ejercicio3.app.config['DATABASE'] = tempfile.mkstemp()
+            ejercicio3.app.config['TESTING'] = True
+            self.app = ejercicio3.app.test_client()
+
+
+        def tearDown(self):
+            os.close(self.db_fd)
+            os.unlink(ejercicio3.app.config['DATABASE'])
+
+        def test_funciona(self):
+            resultado = self.app.get('/user/antonio')
+            self.assertEqual(resultado.status_code, 200)
+
+        def test_otro_enlace(self):
+            """Método que comprueba que si el usuario introduce otra cosa, el programa envia
+            el error 404 """
+
+            resultado = self.app.get('/qwerqewr')
+            self.assertEqual(resultado.status_code, 404)
+
+    if __name__ == '__main__':
+        unittest.main()
+
+![](/capturas/testflask.png)
 
 ### Ejercicio 6 ###
 Primero he tenido que instalar foreman con el siguiente comando:
