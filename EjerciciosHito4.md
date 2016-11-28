@@ -100,4 +100,4 @@ Para comprobar si hemos instalado correctamente docker:
 
     sudo systemctl status docker
 
-![](dockeron.png)
+![](capturas/dockeron.png)
