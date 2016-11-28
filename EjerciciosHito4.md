@@ -64,7 +64,7 @@ Para acceder a lxc-webpanel introducimos **localhost:5000** en nuestro navegador
 
 Como podemos observar en el panel de la primera caja, tenemos este contenedor en estado **stop**.
 
-![](capturas/lxcstopprimeracaja.ong)
+![](capturas/lxcstopprimeracaja.png)
 
 Podemos ponerlo en ejecución pulsando el botón **start**
 
@@ -75,3 +75,9 @@ Podemos ponerlo en ejecución pulsando el botón **start**
 He cambiado el límite de memoria a 512 MB y CPUs a 1. Para ello primero debemos de parar el contenedor pulsando el botón stop. Después rellenamos los campos y pulsamos el botón apply.
 
 ![](capturas/cambiocpylxc.png)
+
+### Ejercicio 5: Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx. ###
+
+Error al intentar instalar la jaula.
+
+![](capturas/errorjaula.png)
