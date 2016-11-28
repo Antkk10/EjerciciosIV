@@ -81,3 +81,23 @@ He cambiado el límite de memoria a 512 MB y CPUs a 1. Para ello primero debemos
 Error al intentar instalar la jaula.
 
 ![](capturas/errorjaula.png)
+
+### Ejercicio 6: instalar dockers. ###
+
+Para instalar Dockers he seguido este [enlace](https://docs.docker.com/engine/installation/linux/ubuntulinux/). Comandos:
+
+    sudo apt-get update
+    sudo apt-get install apt-transport-https ca-certificates
+    sudo apt-key adv \
+               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+    sudo apt-add-repository 'deb https://apt.dockerproject.org/repo ubuntu-xenial main'
+    sudo apt-get update
+    apt-cache policy docker-engine
+    sudo apt-get install -y docker-engine
+
+Para comprobar si hemos instalado correctamente docker:
+
+    sudo systemctl status docker
+
+![](dockeron.png)
