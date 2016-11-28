@@ -9,7 +9,7 @@ He instalado la versión 2.0.5 de **LXC**
 
 Para comprobar las interfaces primero arrancamos la máquina y accedemos a ella.
 
-![](capturas/comienzoprimeracaja.png)
+![](capturas/comienzoprimercaja.png)
 
 Para ver las interfaces usamos el comando:
 
