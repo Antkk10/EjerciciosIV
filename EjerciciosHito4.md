@@ -28,7 +28,7 @@ La segunda interfaz es lo (loopack) y sirve para comunicarse con nuestro sistema
 Para instalar debian en el contenedor:
 
     sudo lxc-create -t debian -n tercera-caja-debian
-    
+
 #### 2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. ####
 
 He instalado centos, para ello primeros instalamos **yum**
@@ -50,3 +50,28 @@ Por último iniciamos el contenedor y accedemos a el:
 
 
 ![](capturas/conectamoscentos.png)
+
+### Ejercicio 4: ###
+
+#### 1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas. ####
+Para instalar lxc-webpanel insertamos este comando en el terminal:
+
+    wget https://lxc-webpanel.github.io/tools/install.sh -O - | bash
+
+Para acceder a lxc-webpanel introducimos **localhost:5000** en nuestro navegador. El nombre de usuario es **admin** y la contraseña **admin**
+
+![](capturas/lxcwebpanel.png)
+
+Como podemos observar en el panel de la primera caja, tenemos este contenedor en estado **stop**.
+
+![](capturas/lxcstopprimeracaja.ong)
+
+Podemos ponerlo en ejecución pulsando el botón **start**
+
+![](capturas/lxcstartprimeracaja.png)
+
+#### 2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria. ####
+
+He cambiado el límite de memoria a 512 MB y CPUs a 1. Para ello primero debemos de parar el contenedor pulsando el botón stop. Después rellenamos los campos y pulsamos el botón apply.
+
+![](capturas/cambiocpylxc.png)
