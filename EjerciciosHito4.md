@@ -4,3 +4,19 @@
 
 He instalado la versión 2.0.5 de **LXC**
 ![](capturas/lxcversion.png)
+
+### Ejercicio 2: Comprobar qué interfaces puente se han creado y explicarlos. ###
+
+Para comprobar las interfaces primero arrancamos la máquina y accedemos a ella.
+
+![](capturas/comienzoprimeracaja.png)
+
+Para ver las interfaces usamos el comando:
+
+    ifconfig -a
+
+![](capturas/comprobacioninterfaces.png)
+
+eth0 (Ethernet) es la interfaz de red. Es utilizada para tener acceso a internet.
+
+La segunda interfaz es lo (loopack) y sirve para comunicarse con nuestro sistema y los demás contenedores.
