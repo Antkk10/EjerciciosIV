@@ -171,3 +171,23 @@ Para ver su funciona nginx:
     curl localhost
 
 ![](capturas/curldocker.png)
+
+### Ejercicio 9: Crear a partir del contenedor anterior una imagen persistente con commit. ###
+
+Primero debemos obtener la id de la columna CONTAINER ID:
+
+    sudo docker ps -a
+
+Congemos la id que queremos y la inspeccionamos para obtener la id larga
+
+    sudo docker inspect 3bab2b96d02b
+
+Obtenemos la id larga, después toca hacer el commit:
+
+    sudo docker commit 3bab2b96d02bd45e845ee6eb76fd0233d2a7f701099b9e69a4b793693080e620 ejercicio9
+
+Vemos el resultado con
+
+    sudo docker images
+
+![](capturas/sudodockerimages.png)
