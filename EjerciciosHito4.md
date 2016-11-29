@@ -121,6 +121,53 @@ Para instalar una imagen que incluya MongoDB:
 
 Podemos ver los tapers que tenemos instalado con:
 
-    sudo docker ps -a
+    sudo docker images
 
-![](capturas/tapersinstalados.png)
+![](capturas/tapersinstalados2.png)
+
+### Ejercicio 8: Crear un usuario propio e instalar nginx en el contenedor creado de esta forma. ###
+
+Arrancamos el taper con ubuntu y accedemos al terminal:
+
+    sudo docker run -i -t ubuntu /bin/bash
+
+Creamos el usuario con contraseña:
+
+    adduser usuariodocker
+
+El usuario se llama:
+
+    login: usuariodocker
+    pw: usuariodocker
+
+![](capturas/crearusuariodocker.png)
+
+He tenido un problema con sudo (no me dejaba usar el comando, no lo encuentra). Para poder solucionar el error, antes de añadir el usuario al grupo sudo y acceder a la cuenta, debemos instalar sudo desde root (estamos actualmente en root):
+
+    apt-get update
+    apt-get -y install sudo
+
+Añadimos al grupo al nuevo usuario al grupo de superusuarios:
+
+    adduser usuariodocker sudo
+
+Para acceder a la cuenta:
+
+    login usuariodocker
+
+Introducimos la clave.
+
+Ahora hay que instalar **nginx** y arrancarlo.
+
+    sudo apt-get install -y nginx
+    sudo service nginx start
+
+Instalamos curl para ver si funciona nginx:
+
+    sudo apt-get install -y curl
+
+Para ver su funciona nginx:
+
+    curl localhost
+
+![](capturas/curldocker.png)
