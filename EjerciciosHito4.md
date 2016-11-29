@@ -101,3 +101,26 @@ Para comprobar si hemos instalado correctamente docker:
     sudo systemctl status docker
 
 ![](capturas/dockeron.png)
+
+### Ejercicio 7: ###
+
+#### 1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS. ####
+Para instalar ubuntu:
+
+    sudo docker pull ubuntu
+
+Para instalar CentOS:
+
+    sudo docker pull centos
+
+#### 2. Buscar e instalar una imagen que incluya MongoDB. ####
+
+Para instalar una imagen que incluya MongoDB:
+
+    sudo docker pull mongo
+
+Podemos ver los tapers que tenemos instalado con:
+
+    sudo docker ps -a
+
+![](capturas/tapersinstalados.png)
