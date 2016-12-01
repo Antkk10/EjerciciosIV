@@ -191,3 +191,7 @@ Vemos el resultado con
     sudo docker images
 
 ![](capturas/sudodockerimages.png)
+
+### Ejercicio 10: Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección. ###
+
+[Enlace ejercicio 10](https://github.com/Antkk10/BotTelegramInfoActividadesUGR/blob/Documentacion/documentacionhito4.md)
