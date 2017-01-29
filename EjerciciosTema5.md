@@ -55,3 +55,15 @@ Accedemos por ssh
 En teoría debería acceder, sin embargo aparece este error:
 
 ![](capturas/sshno.png)
+
+### Ejercicio 6: Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.###
+
+He instalado CentOS en VirtualBox, primero reservamos el tamaño de disco duro y el uso de memoria RAM.
+
+![](capturas/instalarcentos.png)
+
+![](capturas/centos2.png)
+
+Procedemos a instalar
+
+![](capturas/centos3.png)
