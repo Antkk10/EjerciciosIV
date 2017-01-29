@@ -49,3 +49,24 @@ Creamos el archivo ansible.cfg para evitar los errores.
     host_key_checking = False
     [ssh_connection]
     control_path=%(directory)s/%%h-%%r
+
+Por último añadimos en Vagrantfile el puerto de escucha:
+
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+
+
+
+![](capturas/vagrantdebian.png)
+Para comprobar que el servicio funciona, primero levantamos la máquina con
+
+    vagrant up
+
+Después
+
+    vagrant provision
+
+Podemos ver el uso de nginx poniendo en el navegador:
+
+    http://localhost:8080
+
+![](capturas/nginx.png)
