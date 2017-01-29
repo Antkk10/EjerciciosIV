@@ -42,7 +42,7 @@ Nos conectamos con vinagre con
 
     vinagre 0.0.0.1
 
-![](capturas/conexiovinagre.png)
+![](capturas/conexionvinagre.png)
 
 Activamos la opción para ssh
 
