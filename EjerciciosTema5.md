@@ -66,4 +66,4 @@ He instalado CentOS en VirtualBox, primero reservamos el tamaño de disco duro y
 
 Procedemos a instalar
 
-![](capturas/centos3.png)
+![](capturas/centos4.png)
