@@ -60,7 +60,7 @@ En teoría debería acceder, sin embargo aparece este error:
 
 He instalado CentOS en VirtualBox, primero reservamos el tamaño de disco duro y el uso de memoria RAM.
 
-![](capturas/instalarcentos.png)
+![](capturas/intalarcentos.png)
 
 ![](capturas/centos2.png)
 
